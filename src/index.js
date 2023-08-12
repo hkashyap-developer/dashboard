@@ -4,16 +4,19 @@ import './index.css';
 import {App, About} from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
-
+import Home from './Pages/Home/Home.jsx'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <header>
+        
+      </header>
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Routes>
-        <Route path="" element={<App />} />
+        <Route path="" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
