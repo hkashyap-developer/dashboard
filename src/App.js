@@ -25,7 +25,7 @@ function App() {
 function About() {
   return(
     <div className="aboutWrap">
-      <h1>About</h1>
+      <h1>About 2</h1>
     </div>
   );
 }
