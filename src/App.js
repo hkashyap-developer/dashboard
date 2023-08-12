@@ -22,4 +22,13 @@ function App() {
   );
 }
 
-export default App;
+function About() {
+  return(
+    <div className="aboutWrap">
+      <h1>About</h1>
+    </div>
+  );
+}
+
+
+export {App, About};
