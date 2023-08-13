@@ -14,16 +14,20 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
 
-      <Header />
-      
-      <div className="content">
-      <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      </div>
+      <div className="fullPageWrapper">
 
-      <Footer />
+        <Header />
+        
+        <div className="content">
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        </div>
+
+        <Footer />
+
+      </div>
 
     </BrowserRouter>
   </React.StrictMode>
@@ -33,3 +37,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+

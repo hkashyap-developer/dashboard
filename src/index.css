@@ -4,6 +4,10 @@
 body {
   margin:0px; 
 }
+.fullPageWrapper {
+  max-width:1920px;
+  margin:0 auto; 
+}
 .content {
   min-height:70vh; 
 }
