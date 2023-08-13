@@ -5,20 +5,26 @@ import {App, About} from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import Home from './Pages/Home/Home.jsx'; 
+import Header from './Global/Header/Header.jsx';
+import Footer from './Global/Footer/Footer.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
     <BrowserRouter>
-      <header>
-        
-      </header>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+
+      <Header />
+      
+      <div className="content">
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      </div>
+
+      <Footer />
+
     </BrowserRouter>
   </React.StrictMode>
 );
