@@ -25,8 +25,8 @@ const Header = () => {
         </nav> 
       </div>
 
-      <span className="menuToggleOpen" ><i className="material-icons">menu</i></span>
-        <button onClick={toggleMobMenu} >test</button>
+      <span className="menuToggleOpen" onClick={toggleMobMenu}><i className="material-icons">menu</i></span>
+ 
     </div>
     </header>
   )
