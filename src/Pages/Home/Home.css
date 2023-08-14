@@ -3,7 +3,39 @@
     background-size: cover;
     background-position: center center;
     display: flex;
-    align-items: center;
+    flex-direction:column; 
+    justify-content: center;
     color: white;
     padding:20px; 
+}
+.heroHeading {  
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+.heroDesc {
+    margin-bottom: 40px;
+    font-size:20px; 
+    line-height:36px; 
+}
+.heroBtnLink {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.heroBtn {
+    padding: 0px;
+    background: #FF8C38;
+    max-width:400px;
+}
+@media(max-width:520px) {
+    .heroBtn {
+        margin: 0 auto;
+        width: 320px;
+    }
+    .heroBnrInrBx {
+        text-align: center;
+    }
 }
