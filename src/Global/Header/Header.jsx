@@ -1,8 +1,12 @@
 import React from 'react'
-import "./Header.css"
+import './Header.css'
+import {toggleMobMenu} from './Header.js'
 import { Link } from 'react-router-dom';
 
+
+
 const Header = () => {
+
   return (
     <header>
     <div className="menuOuterBox">
@@ -21,8 +25,8 @@ const Header = () => {
         </nav> 
       </div>
 
-      <i className="material-icons menuToggleOpen">menu</i>
-
+      <span className="menuToggleOpen" ><i className="material-icons">menu</i></span>
+        <button onClick={toggleMobMenu} >test</button>
     </div>
     </header>
   )

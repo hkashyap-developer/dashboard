@@ -3,7 +3,7 @@ header {
 }
 .logoWrap {
     display: flex;
-    justify-content:center; 
+    align-items:center; 
 }
 .logoWrap a {
     text-decoration: none;
