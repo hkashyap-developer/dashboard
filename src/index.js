@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {App, About} from './App';
+
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
-import Home from './Pages/Home/Home.jsx'; 
+
 import Header from './Global/Header/Header.jsx';
 import Footer from './Global/Footer/Footer.jsx';
+
+import Home from './Pages/Home/Home.jsx'; 
+import About from './Pages/About/About.jsx'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

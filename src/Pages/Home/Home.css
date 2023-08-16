@@ -29,6 +29,15 @@
     padding: 0px;
     background: #FF8C38;
     max-width:400px;
+    border-radius:6px;
+    border:none;  
+}
+.homeTagline {
+    text-align: center;
+    font-size:28px; 
+    color:rgb(77, 77, 77); 
+    padding:40px 20px; 
+    opacity: 0.8; 
 }
 @media(max-width:520px) {
     .heroBtn {
