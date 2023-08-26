@@ -1,0 +1,11 @@
+.slick-dots {
+    bottom:0px; 
+}
+.slickWrapperCstm {
+    padding:80px; 
+}
+
+.slick-arrow::before {
+    display: none;
+}
+

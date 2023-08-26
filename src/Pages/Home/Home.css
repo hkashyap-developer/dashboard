@@ -32,13 +32,24 @@
     border-radius:6px;
     border:none;  
 }
+.moreIntroWrap {
+    padding:40px 20px;    
+}
 .homeTagline {
-    text-align: center;
     font-size:28px; 
     color:rgb(77, 77, 77); 
-    padding:40px 20px; 
     opacity: 0.8; 
+    text-align: center; 
 }
+.homeRdMrAbtUs {
+    text-align: center;
+}
+.moreIntroWrap a {
+    text-decoration: none;    
+}
+.moreIntroWrap a:hover {    
+    color:rgb(0, 0, 0); 
+}    
 @media(max-width:520px) {
     .heroBtn {
         margin: 0 auto;
