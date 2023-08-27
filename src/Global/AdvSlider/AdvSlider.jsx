@@ -5,6 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './AdvSlider.css'
 
+import Testimonial1 from './Media/Testimonial-1.png'; 
+import Testimonial2 from './Media/Testimonial-2.png'; 
+import Testimonial3 from './Media/Testimonial-3.png'; 
+import arrowRight from './Media/arrow-right.svg';
+import arrowLeft from './Media/arrow-left.svg';
 
 
 function SampleNextArrow(props) {
@@ -12,18 +17,18 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style,  backgroundImage: "url('https://www.iconpacks.net/icons/2/free-arrow-right-icon-2844-thumb.png')", backgroundSize: "cover", width: "40px", height: "40px" }}
+        style={{ ...style,  backgroundImage: `url('${arrowRight}')`, backgroundSize: "cover", width: "40px", height: "40px" }}
         onClick={onClick}
       />
     );
   }
 
-  function SamplePrevArrow(props) {
+  function SamplePrevArrow(props) { 
     const { className, style, onClick } = props;
     return (
       <div
         className={className}
-        style={{ ...style,  backgroundImage: "url('https://cdn-icons-png.flaticon.com/512/60/60577.png')", backgroundSize: "cover", width: "40px", height: "40px" }}
+        style={{ ...style,  backgroundImage: `url('${arrowLeft}')`, backgroundSize: "cover", width: "40px", height: "40px" }}
         onClick={onClick}
       />
     );
@@ -33,38 +38,45 @@ function SampleNextArrow(props) {
 const AdvSlider = () => {
 
     const settings = {
-        dots: true,
+        dots: false,
         buttons:true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1008,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          }
+        ],
     };
 
   return (
     <div className="slickWrapperCstm">
-        <h2> Single Item</h2>
+        <h2>Our Testimonials</h2>
         <Slider {...settings}>
-        <div>
-            <h3>1</h3>
-        </div>
-        <div>
-            <h3>2</h3>
-        </div>
-        <div>
-            <h3>3</h3>
-        </div>
-        <div>
-            <h3>4</h3>
-        </div>
-        <div>
-            <h3>5</h3>
-        </div>
-        <div>
-            <h3>6</h3>
-        </div>
+          <div>
+            <img src={Testimonial1} className="testMnlImg" alt="Testimonial" />
+          </div>
+          <div>
+            <img src={Testimonial2} className="testMnlImg" alt="Testimonial" />
+          </div>
+          <div>
+            <img src={Testimonial3} className="testMnlImg" alt="Testimonial" />
+          </div>
         </Slider>
     </div>
   )

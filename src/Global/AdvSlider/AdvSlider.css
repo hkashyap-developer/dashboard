@@ -2,10 +2,18 @@
     bottom:0px; 
 }
 .slickWrapperCstm {
-    padding:80px; 
+    margin:0px 80px 80px 80px; 
 }
 
 .slick-arrow::before {
     display: none;
 }
 
+.testMnlImg {
+    width:100%;
+    padding:0px; 
+}
+.slick-prev {
+    left: -16px;
+    z-index: 9;
+}
