@@ -66,7 +66,7 @@ const AdvSlider = () => {
 
   return (
     <div className="slickWrapperCstm">
-        <h2>Our Testimonials</h2>
+        <h2>Our Success Stories</h2>
         <Slider {...settings}>
           <div>
             <img src={Testimonial1} className="testMnlImg" alt="Testimonial" />
