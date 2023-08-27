@@ -1,12 +1,12 @@
 .heroBnrInrBx {
-    height: 580px;
+    min-height: 580px;
     background-size: cover;
     background-position: center center;
     display: flex;
     flex-direction:column; 
     justify-content: center;
     color: white;
-    padding:20px; 
+    padding:20px 80px; 
 }
 .heroHeading {  
     font-size: 42px;
