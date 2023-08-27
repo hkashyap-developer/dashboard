@@ -1,5 +1,5 @@
 import React from 'react'
-import BackgroundImg from "../../Media/Images/home-background.jpg"
+import BackgroundImg from "../../Media/Images/home-background.png"
 import './Home.css'
 import { Link } from 'react-router-dom';
 
@@ -11,14 +11,14 @@ const Home = () => {
 
     <div className="heroBannerotrBx">
       <div className="heroBnrInrBx" style={{ backgroundImage: `url(${BackgroundImg})` }}>
-        <h1 className="heroHeading">You got the travel plans, we got the travel vans.</h1>
-        <p className="heroDesc">Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.</p>
-        <button className="heroBtn"><Link to="/about" className="heroBtnLink">Find your van →</Link></button>
+        <h1 className="heroHeading">The last app to manage all your important links!  </h1>
+        <p className="heroDesc">Digital Dashboard to bring everything at one place</p>
+        <button className="heroBtn"><Link to="/about" className="heroBtnLink">Build a Dashboard →</Link></button>
       </div>
       
       <div class="moreIntroWrap">
-        <h2 className="homeTagline">Travel 🚢 The World 🌍 With Us</h2>
-        <Link to="/about"><p className="homeRdMrAbtUs">Read more about our adventures →</p></Link>
+        <h2 className="homeTagline">Managing 🔗links is no more a mess</h2>
+        <Link to="/about"><p className="homeRdMrAbtUs">Read more about how we started →</p></Link>
       </div>
 
       <AdvSlider />
