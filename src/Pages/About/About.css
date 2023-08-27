@@ -1,17 +1,17 @@
 .abtHero-otrBx {
     background-color:#4D16B8; 
     color:white; 
-    min-height: 580px;
 }
 .abtHero-r1 {
     display:flex; 
+    min-height:580px; 
 }
 .abtHero-col {
     flex:1; 
 }
 .abtHero-img {
     width:100%; 
-    max-width:360px; 
+    max-width:560px; 
 }
 .abtHero-col1 {
     display: flex;
@@ -19,8 +19,14 @@
     justify-content: center;
     flex-direction: column; 
 }
+.abtHero-r2 {
+    display: flex;    
+    align-items: center;
+    justify-content: end;
+}
 .abtHero-col1 h1{
     font-size:40px;
+    margin-top:0px; 
     margin-bottom:0px; 
     font-weight:400;
 }
