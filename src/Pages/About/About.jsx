@@ -3,8 +3,10 @@ import './About.css'
 
 const About = () => {
   return (
-    <div>
-      <h1>About Page New</h1>
+    <div class="abtHero-otrBx">
+      <div class="abtHero-inrBx">
+
+      </div>
     </div>
   )
 }

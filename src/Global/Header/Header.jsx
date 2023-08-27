@@ -12,7 +12,7 @@ const Header = () => {
     <div className="menuOuterBox">
       
       <div class="logoWrap">
-        <h2><Link to="/">#VANLIFE</Link></h2>
+        <h2><Link to="/">Ultimate Dashboard</Link></h2>
       </div>
 
       <div class="menuWrap">
