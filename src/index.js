@@ -10,6 +10,9 @@ import Footer from './Global/Footer/Footer.jsx';
 
 import Home from './Pages/Home/Home.jsx'; 
 import About from './Pages/About/About.jsx'; 
+import Contact from './Pages/Contact/Contact.jsx'; 
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +28,7 @@ root.render(
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         </div>
 

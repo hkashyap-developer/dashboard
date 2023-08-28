@@ -1,11 +1,17 @@
 import React from 'react'
 import './About.css'
 import HeroImage from './Media/about-hero.png'
+import Faq from '../../Global/Faq/Faq.jsx'
+
 
 const About = () => {
   return (
+
+    <>
+
     <div class="abtHero-otrBx">
       <div class="abtHero-inrBx">
+        
         <div class="abtHero-r1">
           <div class="abtHero-col1 abtHero-col">
             <h1>The last app to manage all your important 🔗links.</h1>
@@ -15,8 +21,18 @@ const About = () => {
             <img src={HeroImage} className="abtHero-img" alt="About Us Hero Image"/>
           </div>
         </div>
+
+        
+
       </div>
+
+
     </div>
+
+
+    <Faq />
+
+    </>
   )
 }
 
